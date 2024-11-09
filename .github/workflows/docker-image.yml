@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build packages/backend --file packages/backend/Dockerfile --tag backstage:$(date +%s)
+      run: docker build . --file packages/backend/Dockerfile --tag backstage:$(date +%s)
